@@ -3,7 +3,8 @@ package com.example.notepad
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Note(var title: String? = "", var text: String? = "", var filename: String? = "") : Parcelable {
+data class Note(var title: String? = "", var text: String? = "", var filename: String? = "") :
+    Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
